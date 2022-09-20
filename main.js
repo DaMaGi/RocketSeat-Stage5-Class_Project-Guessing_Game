@@ -13,9 +13,6 @@ guessAttemptBtn.addEventListener("click", tryToGuess);
 tryAgainBtn.addEventListener("click", restart);
 inputAttempt.addEventListener("keydown", enterGuess);
 
-// debug
-document.getElementsByClassName("main2")[0].style.display = "block";
-
 function tryToGuess(event) {
     attemptCounter++;
     const guess = inputAttempt.value;
@@ -30,8 +27,6 @@ function tryToGuess(event) {
         document.addEventListener("keydown", enterToTryAgain);
     }
     else {
-        // debug
-        console.log(numberToGuess);
         return false;
     }
 }
