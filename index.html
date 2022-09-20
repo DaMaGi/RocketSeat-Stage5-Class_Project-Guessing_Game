@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogo de adivinhação">
+    <meta name="keywords" content="random, guess, adivinhar, aleatório">
+    <meta name="author" content="Daniel Mäder Gisi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="">
+    <title>Adivinhe o número</title>
+</head>
+
+<body>
+    <main class="main1">
+        <h1>Jogo da Adivinhação</h1>
+        <p>Adivinhe o número de 0 a 10</p>
+        <fieldset>
+            <input type="number" min="0" max="10" id="attemptNum" value="0" autofocus></input><!-- comment to avoid whitespace between these elements
+            --><button id="guessBtn">Tentar</button>
+        </fieldset>
+    </main>
+
+    <main class="main2">
+        <h2>Acertou em <span id="counter">x</span> tentativas!</h2>
+        <fieldset><button id="tryAgain">Jogar novamente</button></fieldset>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
