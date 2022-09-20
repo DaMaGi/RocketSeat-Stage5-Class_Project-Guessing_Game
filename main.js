@@ -1,6 +1,4 @@
-"use strict";
-
-let randomNumber = () => Number(Math.random() * 11).toFixed(0);
+const randomNumber = () => Number(Math.random() * 11).toFixed(0);
 
 const screen1 = document.getElementsByClassName("main1")[0];
 const screen2 = document.getElementsByClassName("main2")[0];
